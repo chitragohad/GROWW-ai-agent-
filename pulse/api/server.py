@@ -239,6 +239,23 @@ def build_dashboard_payload() -> dict[str, Any]:
     }
 
 
+@app.get("/")
+def root() -> dict[str, Any]:
+    """Landing page for Railway/public URL — avoids 404 on `/`."""
+    return {
+        "service": "groww-pulse-api",
+        "status": "ok",
+        "message": "Groww Weekly Review Pulse API. Use /api/dashboard for operator data.",
+        "docs": "/docs",
+        "endpoints": {
+            "health": "/health",
+            "dashboard": "/api/dashboard",
+            "status": "/api/status/{iso_week}",
+            "check_failures": "/api/check-failures",
+        },
+    }
+
+
 @app.get("/health")
 def health() -> dict[str, str]:
     return {"status": "ok", "service": "groww-pulse-api"}
