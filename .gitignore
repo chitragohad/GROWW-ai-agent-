@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Data & secrets
+data/
+!data/.gitkeep
+*.env
+!*.env.example
+config/mcp/docs-mcp.env
+config/mcp/gmail-mcp.env
+
+# Node
+node_modules/
+frontend/.next/
+frontend/node_modules/
+mcp-servers/*/dist/
+
+# IDE & OS
+.idea/
+.vscode/
+.DS_Store
+
+# Test & tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# MCP idempotency DB (local)
+idempotency.db

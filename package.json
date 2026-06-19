@@ -1,0 +1,22 @@
+{
+  "name": "groww-review-pulse",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Groww Weekly Review Pulse — monorepo root",
+  "workspaces": [
+    "frontend",
+    "mcp-servers/google-docs-mcp",
+    "mcp-servers/gmail-mcp"
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace pulse-dashboard",
+    "dev:api": "cd .. && PULSE_API_PORT=8001 .venv/bin/pulse-api",
+    "dev": "npm run dev:api & npm run dev:web",
+    "build:web": "npm run build --workspace pulse-dashboard",
+    "build:mcp": "npm run build --workspaces --if-present",
+    "test:mcp": "npm test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,12 @@
+# Railway config for pulse-api service (repo root).
+# Create a second service "pulse-worker" with start command: bash scripts/railway-weekly-pulse.sh
+# and attach the same /data volume. Configure cron in Railway UI: 30 3 * * 1 (Mon 09:00 IST).
+
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"

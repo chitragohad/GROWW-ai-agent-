@@ -1,0 +1,15 @@
+{
+  "name": "@pulse/google-docs-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server for Google Docs append and section lookup (Phase 5)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "echo 'Phase 5: implement google-docs-mcp'",
+    "test": "echo 'Phase 5: add tests'"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

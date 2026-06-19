@@ -1,0 +1,10 @@
+{
+  "mcpServerUrl": "https://web-production-bf583.up.railway.app",
+  "repository": "https://github.com/chitragohad/Chitra-MCP-server",
+  "endpoints": {
+    "health": "GET /",
+    "append_to_doc": "POST /append_to_doc",
+    "create_email_draft": "POST /create_email_draft"
+  },
+  "approvalHeader": "X-Approval-Key"
+}

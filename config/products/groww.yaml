@@ -1,0 +1,24 @@
+product: groww
+display_name: Groww
+play_store:
+  app_id: com.nextbillion.groww
+ingestion:
+  window_weeks: 10
+  min_reviews: 20
+  max_reviews: 5000
+  min_words: 8
+  allowed_language: en
+delivery:
+  # Production Doc: "Weekly Review Pulse — Groww"
+  # Override locally with GOOGLE_DOC_ID in .env for staging tests.
+  google_doc_id: "1ArysoTqwaheaUsz4QLHdm5HKOvkkAe_aDwbVnz43ZfA"
+  email:
+    recipients:
+      - product-leads@example.com
+      - support-leads@example.com
+    # Scheduler uses send in production; dev/staging default to draft unless overridden.
+    default_mode: send
+scheduling:
+  timezone: Asia/Kolkata
+  iso_week_policy: previous_complete_before_monday_9am
+  monday_cutoff_hour: 9

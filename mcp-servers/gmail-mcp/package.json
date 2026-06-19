@@ -1,0 +1,15 @@
+{
+  "name": "@pulse/gmail-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "MCP server for Gmail draft/send with idempotency (Phase 6)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "echo 'Phase 6: implement gmail-mcp'",
+    "test": "echo 'Phase 6: add tests'"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

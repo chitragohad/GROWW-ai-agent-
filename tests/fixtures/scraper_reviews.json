@@ -1,0 +1,50 @@
+[
+  {
+    "reviewId": "rev-001",
+    "content": "The app freezes exactly when the market opens, very frustrating experience overall.",
+    "score": 1,
+    "at": "2026-05-01T10:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-002",
+    "content": "Support takes days to reply and does not solve the issue at all sadly.",
+    "score": 2,
+    "at": "2026-05-02T11:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-003",
+    "content": "Good app",
+    "score": 5,
+    "at": "2026-05-03T12:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-004",
+    "content": "Great trading experience but needs more advanced portfolio analytics tools please.",
+    "score": 4,
+    "at": "2026-05-04T13:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-005",
+    "content": "Love it! Amazing app with fast UPI payments and smooth mutual fund investing journey.",
+    "score": 5,
+    "at": "2026-05-05T14:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-006",
+    "content": "यह ऐप बहुत खराब है और कभी कभी क्रैश हो जाता है बार बार",
+    "score": 1,
+    "at": "2026-05-06T15:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-007",
+    "content": "Nice app 😀 but crashes sometimes during peak market hours for many users here",
+    "score": 3,
+    "at": "2026-05-07T16:00:00+00:00"
+  },
+  {
+    "reviewId": "rev-008",
+    "content": "The app freezes exactly when the market opens, very frustrating experience overall.",
+    "score": 1,
+    "at": "2026-05-01T10:00:00+00:00"
+  }
+]
