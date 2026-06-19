@@ -109,7 +109,7 @@ COPY pulse/ pulse/
 COPY config/ config/
 RUN pip install --no-cache-dir -e ".[web]"
 ENV PULSE_DATA_DIR=/data HF_HOME=/data/hf-cache
-VOLUME /data
+# Mount a Railway Volume at /data in the service settings (not Docker VOLUME)
 CMD uvicorn pulse.api.server:app --host 0.0.0.0 --port ${PORT:-8001}
 ```
 

@@ -21,7 +21,8 @@ ENV PULSE_DATA_DIR=/data \
 
 EXPOSE 8001
 
-VOLUME ["/data"]
+# Persistent data: attach a Railway Volume in the service settings (mount path /data).
+# Do not use Docker VOLUME — Railway rejects it at build time.
 
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://127.0.0.1:' + __import__('os').environ.get('PORT', '8001') + '/health')"
